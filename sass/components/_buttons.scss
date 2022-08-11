@@ -1,10 +1,13 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/functions" as *;
+
 .btn {
   display: inline-block;
-  background: #ff523b;
+  background: $clr-primary;
   color: #fff;
-  padding: 8px 30px;
-  margin-block: 30px;
-  border-radius: 30px;
+  padding: em(8) em(30);
+  margin-block: em(30);
+  border-radius: 100vh;
   transition: background 0.5s;
 
   &:hover {

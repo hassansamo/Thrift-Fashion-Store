@@ -13,7 +13,10 @@
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
-
+  span {
+    color: floralwhite;
+    background: green;
+  }
   img {
     padding: 50px;
   }
