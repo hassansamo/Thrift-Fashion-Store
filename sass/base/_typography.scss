@@ -19,7 +19,7 @@ h2 {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: #555;
+  color: $clr-accent;
 
   &::after {
     content: "";
@@ -34,12 +34,18 @@ h2 {
 }
 
 h4 {
-  color: #555;
+  color: $clr-accent;
   font-weight: normal;
 }
 
 .col-4 {
   p {
     font-size: 14px;
+  }
+}
+
+marquee {
+  p {
+    color: black;
   }
 }

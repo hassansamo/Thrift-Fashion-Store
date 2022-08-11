@@ -1,0 +1,8 @@
+@use "../abstracts/colors" as *;
+
+marquee {
+  background: $clr-primary-600;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

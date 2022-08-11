@@ -1,36 +1,34 @@
-function playSound() {
-  // lightsabers
-  let lsStart = document.getElementById("lsStart");
-  let lsPulse = document.getElementById("lsPulse");
-  let lsStop = document.getElementById("lsStop");
+document.getElementById("date-time").innerHTML = Date();
 
-  // darksaber
-  let dsStart = document.getElementById("dsStart");
-  let dsPulse = document.getElementById("dsPulse");
-  let dsStop = document.getElementById("dsStop");
+var x = document.getElementById("demo");
 
-  let darkSaber = document.getElementById("darksaber");
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition, showError);
+} else {
+  x.innerHTML = "Geolocation is not supported by this browser.";
+}
 
-  let box = document.getElementById("on-off");
+function showPosition(position) {
+  x.innerHTML =
+    "Latitude: " +
+    position.coords.latitude +
+    "<br>Longitude: " +
+    position.coords.longitude;
+}
 
-  // Sound effects of lightsabers
-  if (box.checked == true && !darkSaber.checked) {
-    lsStart.play();
-    setTimeout(console.log("Gello"), 10000);
-    lsPulse.play();
-  } else {
-    lsPulse.pause();
-    lsPulse.currentTime = 0;
-    lsStop.play();
-  }
-
-  // Sound effects of darksabers
-  if (box.checked == true && darkSaber.checked) {
-    dsStart.play();
-    dsPulse.play();
-  } else {
-    dsPulse.pause();
-    dsPulse.currentTime = 0;
-    dsStop.play();
+function showError(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred.";
+      break;
   }
 }
