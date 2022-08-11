@@ -1,0 +1,23 @@
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+  span {
+    color: floralwhite;
+    background: green;
+  }
+  img {
+    padding: 50px;
+  }
+}
