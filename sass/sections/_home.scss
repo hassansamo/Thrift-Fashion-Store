@@ -1,3 +1,5 @@
+@use "../abstracts/colors" as *;
+
 .categories {
   margin-block: 70px;
 }
@@ -19,4 +21,15 @@
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.rating {
+  .fa {
+    color: $clr-primary-600;
+  }
 }

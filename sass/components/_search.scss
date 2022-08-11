@@ -3,7 +3,7 @@
 
 .search {
   --size: 50px;
-  border: 2px solid $clr-primary;
+  border: 2px solid $clr-primary-700;
   display: flex;
   border-radius: 100px;
   overflow: hidden;
@@ -56,7 +56,7 @@
     }
 
     .search__submit {
-      background: $clr-primary;
+      background: $clr-primary-700;
       color: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
       // transition: transform 500ms ease-out;
