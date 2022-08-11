@@ -12,8 +12,14 @@
   align-items: center;
   padding-inline: em(20);
 
+  .logo {
+    img {
+      width: em(200);
+    }
+  }
+
   img {
-    width: em(200);
+    width: 30px;
   }
 }
 
@@ -27,6 +33,7 @@ nav {
     li {
       display: inline-block;
       margin-right: em(20);
+      align-self: baseline;
     }
   }
 }
