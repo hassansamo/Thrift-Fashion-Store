@@ -1,0 +1,37 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/functions" as *;
+
+.container {
+  max-width: em(1300);
+  margin: auto;
+  padding-inline: em(25);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-inline: em(20);
+
+  img {
+    width: em(200);
+  }
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+
+  ul {
+    display: inline-block;
+
+    li {
+      display: inline-block;
+      margin-right: em(20);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $clr-accent;
+}
