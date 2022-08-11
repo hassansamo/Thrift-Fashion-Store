@@ -1,3 +1,5 @@
+@use "../abstracts/colors" as *;
+
 .header {
   background: radial-gradient(#fff, #ffd6d6);
 }
@@ -7,17 +9,17 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 70px;
+  margin-top: em(70);
 }
 
 .col-2 {
   flex-basis: 50%;
-  min-width: 300px;
+  min-width: em(300);
   span {
     color: floralwhite;
     background: green;
   }
   img {
-    padding: 50px;
+    padding: em(50);
   }
 }
