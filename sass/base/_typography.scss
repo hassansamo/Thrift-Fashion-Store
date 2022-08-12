@@ -1,13 +1,14 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/functions" as *;
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
 h1 {
-  font-size: rem(50);
-  line-height: em(60);
-  margin-block: em(25);
+  font-size: 50px;
+  line-height: 60px;
+  margin-block: 25px;
 }
 
 h2 {
@@ -73,5 +74,16 @@ marquee {
       color: #555;
       font-size: 1rem;
     }
+  }
+}
+
+footer {
+  p {
+    color: #8a8a8a;
+  }
+
+  h3 {
+    color: #fff;
+    margin-bottom: 20px;
   }
 }
