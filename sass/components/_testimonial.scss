@@ -1,0 +1,29 @@
+@use "../abstracts/colors" as *;
+
+.testimonial {
+  padding-top: 100px;
+
+  .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    img {
+      width: 50px;
+      margin-top: 20px;
+      border-radius: 50%;
+      display: inline;
+    }
+  }
+}
+
+.fa.fa-quote-left {
+  font-size: 34px;
+  color: $clr-primary-600;
+}

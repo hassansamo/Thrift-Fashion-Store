@@ -10,10 +10,6 @@ h1 {
   margin-block: em(25);
 }
 
-p {
-  color: $clr-accent;
-}
-
 h2 {
   text-align: center;
   margin: 0 auto 80px;
@@ -38,6 +34,20 @@ h4 {
   font-weight: normal;
 }
 
+p {
+  color: $clr-accent;
+}
+
+.logo {
+  p {
+    color: $clr-accent;
+
+    span {
+      color: $clr-primary-700;
+    }
+  }
+}
+
 .col-4 {
   p {
     font-size: 14px;
@@ -47,5 +57,21 @@ h4 {
 marquee {
   p {
     color: black;
+  }
+}
+
+.testimonial {
+  .col-3 {
+    p {
+      font-size: 12px;
+      margin-block: 12px;
+      color: #777;
+    }
+
+    h3 {
+      font-weight: 600;
+      color: #555;
+      font-size: 1rem;
+    }
   }
 }
