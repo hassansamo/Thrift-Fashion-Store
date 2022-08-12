@@ -1,0 +1,73 @@
+@use "../abstracts/colors" as *;
+
+.card {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  position: relative;
+  // background: $clr-accent;
+  background: $clr-primary-600;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 1.25em;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+  }
+
+  &::before {
+    border-top: 1px solid $clr-card;
+    border-bottom: 1px solid $clr-card;
+    transform: scale(0, 1);
+  }
+
+  &::after {
+    border-left: 1px solid $clr-card;
+    border-right: 1px solid $clr-card;
+    transform: scale(1, 0);
+  }
+
+  &:hover::before {
+    transform: scale(1.05, 1);
+  }
+
+  &:hover::after {
+    transform: scale(1, 1.05);
+  }
+
+  img {
+    transition: opacity ease-out 250ms;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.4;
+    }
+
+    & .card__text {
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $clr-card;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $clr-card;
+    margin-bottom: 0;
+  }
+
+  &__body {
+    color: $clr-card;
+  }
+}
