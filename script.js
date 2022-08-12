@@ -1,3 +1,5 @@
+// Ticker
+
 document.getElementById("date-time").innerHTML = Date();
 
 let x = document.getElementById("location");
@@ -32,4 +34,17 @@ function showError(error) {
       x.innerHTML = "An unknown error occurred.";
       break;
   }
+}
+
+// Page Visitor Count
+
+let countE1 = document.getElementById("count");
+countvisits();
+
+function countvisits() {
+  fetch("https://api.countapi.xyz/update/thrift-fashion-store/store/?amount=1")
+    .then((res) => res.json())
+    .then((res) => {
+      countE1.innerHTML = res.value;
+    });
 }

@@ -1,4 +1,11 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/functions" as *;
+
+.container {
+  max-width: em(1300);
+  margin: auto;
+  padding-inline: em(25);
+}
 
 .categories {
   margin-block: 70px;

@@ -1,12 +1,6 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/functions" as *;
 
-.container {
-  max-width: em(1300);
-  margin: auto;
-  padding-inline: em(25);
-}
-
 .navbar {
   display: flex;
   align-items: center;
