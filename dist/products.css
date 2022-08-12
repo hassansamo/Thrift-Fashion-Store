@@ -1,0 +1,101 @@
+#item1:hover,
+#item2:hover,
+#item3:hover,
+#item4:hover,
+#item5:hover,
+#item6:hover,
+#item7:hover,
+#item8:hover,
+#item9:hover,
+#item10:hover,
+#item11:hover,
+#item12:hover,
+#item13:hover,
+#item14:hover,
+#item15:hover,
+#item16:hover,
+#item17:hover,
+#item18:hover,
+#item19:hover,
+#item20:hover,
+#item21:hover,
+#item22:hover,
+#item23:hover,
+#item24:hover,
+#item25:hover,
+#item26:hover,
+#item27:hover,
+#item28:hover,
+#item29:hover,
+#item30:hover,
+#item31:hover,
+#item32:hover,
+#item33:hover,
+#item34:hover,
+#item35:hover,
+#item36:hover,
+#item37:hover,
+#item38:hover,
+#item39:hover,
+#item40:hover {
+  /*border: 3px solid grey;*/
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+#row1 {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+#row2 {
+  width: 100%;
+}
+#card1 {
+  width: 240px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 7px;
+  height: 500px;
+}
+
+#card2 {
+  width: 100%;
+  height: 300px;
+}
+
+#ct1 {
+  color: lightslategray;
+}
+#category {
+  display: none;
+}
+.btn {
+  color: black;
+  background-color: #ff523b;
+  border: none;
+  border-radius: 0px;
+}
+.btn:hover {
+  color: black;
+  background-color: #ff523b;
+}
+#moddia {
+  max-width: 900px;
+}
+#modbod {
+  width: 100%;
+  height: 400px;
+}
+#moddiv {
+  width: 400px;
+}
+#prodimage {
+  width: 350px;
+  height: 350px;
+}
+#modbtn {
+  width: 80%;
+  border-radius: 0px;
+  font-size: 20px;
+}
