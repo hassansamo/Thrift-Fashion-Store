@@ -1,6 +1,6 @@
 @use "../abstracts/colors" as *;
 
-.ticker {
+marquee {
   background: $clr-primary-600;
   position: fixed;
   bottom: 0;

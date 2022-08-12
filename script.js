@@ -1,6 +1,6 @@
 document.getElementById("date-time").innerHTML = Date();
 
-var x = document.getElementById("demo");
+let x = document.getElementById("location");
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -9,11 +9,12 @@ if (navigator.geolocation) {
 }
 
 function showPosition(position) {
-  x.innerHTML =
+  x.innerText =
     "Latitude: " +
     position.coords.latitude +
-    "<br>Longitude: " +
+    " & Longitude: " +
     position.coords.longitude;
+  console.log("date");
 }
 
 function showError(error) {
