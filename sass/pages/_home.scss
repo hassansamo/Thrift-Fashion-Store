@@ -7,8 +7,52 @@
   padding-inline: em(25);
 }
 
+.col-2 {
+  flex-basis: 50%;
+  min-width: em(300);
+  span {
+    color: floralwhite;
+    background: green;
+  }
+  img {
+    padding: em(50);
+  }
+}
+
 .categories {
   margin-block: 70px;
+  text-align: center;
+
+  .heading {
+    position: relative;
+    display: inline-block;
+  }
+  h1 {
+    &::before,
+    &::after {
+      content: "";
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+
+    &::before {
+      background: $clr-primary-600;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -2;
+    }
+
+    &::after {
+      height: 101%;
+      background: white;
+      left: -0.1em;
+      right: -0.1em;
+      z-index: -1;
+    }
+  }
 }
 
 .col-3 {
